@@ -58,8 +58,7 @@ void workWithServer(int c){
 
   http.addHeader("Content-Type" , "application/json");
 
-  int httpCode = http.POST(JSONmessageBuffer);
-  
+  int httpCode = http.POST(JSONmessageBuffer);  
   Serial.println(httpCode);
 
   if(httpCode == 200){
